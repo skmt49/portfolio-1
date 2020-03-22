@@ -1,0 +1,193 @@
+a{
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html{
+  /* font-size: 14px */
+  font-family: "Roboto";
+  font-size: 0.97vw;
+}
+
+body{
+  margin: 0;
+}
+
+h2{
+  font-size: 2.57rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5.07rem;
+}
+
+
+.wrapper{
+  margin: 7.42rem 14.64rem 3.57rem;
+}
+
+.impact-content p{
+  font-size: 1.71rem;
+}
+
+.content{
+  letter-spacing: 0.05em;
+  line-height: 30px;
+}
+
+.service,.news,.contact{
+  margin-top: 11rem;
+}
+
+.service-container{
+  display: flex;
+}
+
+.service-pic img{
+  width: 33vw;
+  height: auto;
+}
+
+.service-contents{
+  width: 33vw;
+  margin: auto auto auto 0;
+}
+
+.service-container:nth-child(even){
+  flex-flow: row-reverse;
+}
+
+.service-container:nth-child(odd){
+  margin-top: 3.57rem;
+}
+
+
+.service-container:nth-child(even) .service-contents{
+  margin: auto 0 auto auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.news-cards{
+  display: flex;
+}
+
+.card{
+  margin-left: 2.42rem;
+  margin-top: 3.57rem;
+  width:calc((100% - (2.42rem * 2) )/ 3);
+  box-shadow: 0 0 10px;
+}
+
+.news-pic img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width:641px) {
+  .card:nth-child(3n+1){
+    margin-left: 0;
+  }
+
+  .card:nth-child(-n+3){
+    margin-top: 0;
+  }
+}
+
+.news-content{
+  margin: 1.78rem 2.35rem;
+}
+
+.contact h2{
+  font-size: 1.71rem;
+  font-weight: normal;
+}
+
+.contact p{
+  margin: 0 auto;
+  width: 50rem;
+}
+
+.form{
+  display: block;
+  margin: 0 auto;
+  width: 50rem;
+}
+
+.form:nth-child(n+1){
+  margin-bottom: 1.57rem;
+}
+
+.contact-form{
+  height: 12.24rem;
+}
+
+.submit{
+  display: block;
+  width: 16.78rem;
+  height: 4.28rem;
+  font-size: 1.42rem;
+  border-radius: 2.10rem;
+  color: #fff;
+  background-color: #000;
+  margin: 3.57rem auto 0;
+}
+
+@media screen and (max-width:375px) {
+  html{
+    /* font-size: 14px */
+    font-size: 3.73vw;
+    overflow-x: hidden;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .wrapper{
+    margin: 7.42rem 1rem 3.57rem;
+  }
+
+  .service-container{
+    flex-direction: column;
+  }
+
+  .service-pic img{
+    width: 100%;
+  }
+
+  .service-container:nth-child(even){
+    flex-flow: initial;
+    flex-direction: column;
+  }
+
+  .service-contents{
+    width: 100%;
+  }
+
+  .service-pic{
+    margin-top: 2.8rem;
+  }
+
+  .news-cards{
+    flex-direction: column;
+  }
+
+  .card{
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form{
+    width: 100%;
+  }
+
+
+
+}
